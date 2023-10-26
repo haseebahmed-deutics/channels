@@ -366,9 +366,10 @@ ChatConsumer add its channel to a group whose name is based on the room name.
 That will allow ChatConsumers to transmit messages to all other ChatConsumers in
 the same room.
 
-We will use a channel layer that uses Redis as its backing store. To start a
-Redis server on port 6379, run the following command (press Control-C to stop
-it):
+Redis will be the backing store for our channel layer. Use the following 
+command to launch a Redis server on port 6379; to stop it, press Control-C.
+Additionally, make sure your local redis server is not up and running.
+If it is, you can encounter package conflicts if the server is an outdated package.
 
 .. code-block:: sh
 
